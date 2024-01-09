@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --yellow: hsl(47, 88%, 63%);
+      --white: hsl(0, 0%, 100%);
+      --grey: hsl(0, 0%, 50%);
+      --black: hsl(0, 0%, 7%);
+    }
+
+    body {
+      display: grid;
+      place-content: center;
+      min-block-size: 100vh;
+      background-color: var(--yellow);
+      font-size: 16px;
+      font-family: 'Figtree', 'sans-serif';
+    }
+
+    .wrapper {
+      background-color: var(--white);
+      border: 1px solid black;
+      border-radius: 1rem;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.5rem;
+      max-width: 380px;
+      box-shadow: 10px 10px 0px rgb(0, 0, 0);
+    }
+
+    .card-image {
+      border-radius: 12px;
+      display: block;
+    }
+
+    .tag {
+      background-color: var(--yellow);
+      color: var(--black);
+      font-weight: 800;
+      padding: 0.4em;
+      width: 6rem;
+      text-align: center;
+      border-radius: 0.25rem;
+      cursor: pointer;
+    }
+
+    .content {
+      color: var(--grey);
+      font-weight: 500;
+      line-height: 1.5rem;
+    }
+
+    .card-title {
+      font-size: 1.4rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .card-title:hover {
+      color: var(--yellow);
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      font-weight: 800;
+    }
+
+    .user-image {
+      height: 2rem;
+      width: 2rem;
+      object-fit: cover;
+      margin-right: 1rem;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <main>
+    <div class="wrapper">
+      <svg class="card-image" xmlns="http://www.w3.org/2000/svg" width="336" height="201" fill="none" viewBox="0 0 336 201"><g clip-path="url(#a)"><path fill="#F4D04E" d="M0 .5h336v200H0z"/><rect width="139" height="95" x="87.996" y="77.729" fill="#fff" rx="47.5" transform="rotate(-45 87.996 77.729)"/><rect width="139" height="95" x="54.055" y="77.729" fill="#111" rx="47.5" transform="rotate(-45 54.055 77.729)"/><path fill="#111" d="M234.864 209.036 451.4-7.5l67.175 67.175-216.536 216.536z"/><rect width="139" height="95" x="20.114" y="77.729" fill="#fff" rx="47.5" transform="rotate(-45 20.114 77.729)"/><rect width="204.19" height="270.554" fill="#111" rx="102.095" transform="scale(-1 1) rotate(45 -103.887 14.564)"/><path stroke="#fff" stroke-width="3" d="m6.69-357.5 135.583 135.727c12.481 12.494 12.481 32.737 0 45.231L-45.544 11.475c-12.481 12.494-12.481 32.737 0 45.23L107.088 209.5"/><path stroke="#111" stroke-width="3" d="M69.965 71.719v23.334h23.334M136.079 52.273V28.94h-23.334M102.845 38.838v46.67M210.364-37.5l60.873 60.873c12.497 12.496 12.497 32.758 0 45.254l-77.745 77.746c-12.497 12.496-12.497 32.758 0 45.254l69.872 69.873"/><path stroke="#111" stroke-width="3" d="m253.339 149.574-12.144 12.145 14.256 14.257v12.672h12.673l13.729 13.729 12.145-12.145M278.685 124.228l-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145M304.031 98.883l-12.145 12.144 14.257 14.257v12.673h12.673l13.729 13.729 12.144-12.145M329.376 73.537l-12.145 12.145 14.257 14.257v12.672h12.673l13.729 13.729 12.145-12.144"/><path stroke="#fff" stroke-width="5" d="m354.722 48.191-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145"/><mask id="b" width="285" height="285" x="234" y="-8" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#111" d="M234.864 209.036 451.4-7.5l67.175 67.175-216.536 216.536z"/></mask><g stroke="#fff" mask="url(#b)"><path stroke-width="3" d="m253.339 149.574-12.144 12.145 14.256 14.257v12.672h12.673l13.729 13.729 12.145-12.145M278.685 124.228l-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145M304.031 98.883l-12.145 12.144 14.257 14.257v12.673h12.673l13.729 13.729 12.144-12.145M329.376 73.537l-12.145 12.145 14.257 14.257v12.672h12.673l13.729 13.729 12.145-12.145"/><path stroke-width="5" d="m354.722 48.191-12.145 12.145 14.257 14.257v12.673h12.673l13.729 13.729 12.145-12.145"/></g></g><defs><clipPath id="a"><path fill="#fff" d="M0 .5h336v200H0z"/></clipPath></defs></svg>
+      <div class="tag">
+        Learning
+      </div>
+      <p>
+        Published 21 Dec 2023
+      </p>
+    
+      <h1 class="card-title">
+        HTML & CSS foundations
+      </h1>
+      <p class="content">
+        These languages are the backbone of every website, defining structure, content, and presentation.
+      </p>
+      <div class="user-info">
+        <img alt="" class="user-image" src="./assets/images/image-avatar.webp">
+        <span>Greg Hooper</span>
+      </div>
+    </div>
+  </main>
+  
+</body>
+</html>
